@@ -4,10 +4,15 @@
   justify-content: space-between;
 }
 
-.obal__item {
-  flex: 0 0 50%;
+.obal__item1 {
+  flex: 0 0 20%;
 }
 
+.obal__item1 {
+  flex: 0 0 80%;
+}
+
+/* ve stylu v boostrapu je nastaveno wrap, i když to dam na nowrap, tak to nereaguje a na jednu řádku to neskočí */
 .navbar {
   flex-wrap: nowrap;
 }
