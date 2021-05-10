@@ -8,19 +8,30 @@ html {
 *:after {
   box-sizing: inherit;
 }
+/* root díky bootsstrapu nefunguje */
+:root {
+  --main-color-font: (rgb(16, 2, 94));
+  --main-color-bg: (rgb(255, 153, 0));
+}
 
+.bold {
+  font-weight: 600;
+}
+
+/* menu */
 .navbar-collapse {
   flex-grow: 0;
 }
 
 nav {
-  background-color: aqua;
+  background-color: rgba(255, 153, 0, 0.801);
 }
 
 .nav-link {
-  color: red !important;
+  color: rgb(28, 2, 180) !important;
 }
 
+/* rozbalovací lišta služeb*/
 sub {
   margin-left: 20px;
 }
@@ -29,7 +40,70 @@ sub {
   visibility: hidden;
 }
 
+/* seznam organizací - jedna karta  */
+.card-org {
+  width: 330px;
+  height: 250px;
+  border: 2px solid rgb(255, 153, 0);
+  box-shadow: 0px 2px 8px gray;
+  margin: 5px auto;
+  padding: 25px;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-org__logo img {
+  max-width: 100%;
+}
+
+.btn {
+  border: 1px solid rgb(255, 153, 0);
+  padding: 10px 30px;
+
+  letter-spacing: 1.5px;
+  width: 50%;
+  margin: 0 auto;
+  align-self: flex-end;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(255, 153, 0);
+}
+
+.card-org-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-org__www,
+.card-org__town {
+  margin: 0;
+}
+
+.card-org__www a {
+  color: black;
+}
+
+/* footer */
+footer {
+  background-color: rgb(255, 153, 0);
+  color: rgb(28, 2, 180);
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(28, 2, 180);
+}
+
 @media screen and (max-width: 950px) {
+  /* rozbalovací lišta služeb */
   sub,
   .pruhledne {
     display: none;
