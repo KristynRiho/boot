@@ -1,0 +1,13 @@
+.obal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.obal__item {
+  flex: 0 0 50%;
+}
+
+.navbar {
+  flex-wrap: nowrap;
+}
