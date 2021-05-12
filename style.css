@@ -43,7 +43,8 @@ sub {
 /* seznam organizací - jedna karta  */
 .card-org {
   width: 330px;
-  height: 250px;
+  /* height: 250px; */
+  height: 400px;
   border: 2px solid rgb(255, 153, 0);
   box-shadow: 0px 2px 8px gray;
   margin: 5px auto;
@@ -74,11 +75,11 @@ sub {
   background-color: rgb(255, 153, 0);
 }
 
-.card-org-flex {
+/* .card-org-flex {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
+} */
 
 .card-org__www,
 .card-org__town {
