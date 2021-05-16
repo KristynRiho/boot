@@ -28,6 +28,30 @@ nav {
   border-bottom: 1px solid rgb(255, 153, 0);
 }
 
+/*pokus*/
+
+nav ul li a {
+  transition: all 1.2s !important;
+}
+
+nav ul li a:hover {
+  color: #fff !important;
+  z-index: 1 !important;
+}
+nav ul li a:hover:after {
+  z-index: -10 !important;
+  animation: fill 1s forwards !important;
+  -webkit-animation: fill 1s forwards !important;
+  -moz-animation: fill 1s forwards !important;
+  opacity: 1 !important;
+}
+
+.nav-link:hover {
+  background-color: rgb(255, 153, 0) !important;
+  border-radius: 4px;
+}
+/*pokus*/
+
 .navbar {
   padding: 0;
 }
@@ -35,7 +59,9 @@ nav {
 .nav-link {
   color: rgb(255, 153, 0) !important;
   width: 200px;
+  text-align: center;
 }
+
 .navbar-brand img {
   width: 150px;
 }
@@ -44,7 +70,6 @@ nav {
 sub {
   margin-left: 20px;
 }
-
 .pruhledne {
   visibility: hidden;
 }
@@ -98,16 +123,18 @@ sub {
 /* footer */
 footer {
   background-color: rgb(255, 153, 0);
-  color: rgb(28, 2, 180);
+  color: beige !important;
   padding: 10px;
   text-align: center;
 }
 
 footer a {
   text-decoration: none;
-  color: rgb(28, 2, 180);
+  color: beige !important;
 }
-
+footer a:hover {
+  text-decoration: underline;
+}
 @media screen and (min-width: 900px) {
   /* seznam organizací - jedna karta */
 
